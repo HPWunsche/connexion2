@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/connexion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="logo">
+            <figure class="logo-img">
+                <img src="https://www.artmajeur.com/medias/standard/n/a/nathalietresy/artwork/5234851_IMG_0012_(2)-border.jpg" alt="cygnes en vol" width="300px">   
+            </figure>
+
+            <div class="logo-text">
+                <h1>Swan News World</h1>
+                <h2>Toutes vos actualités high-tech mondiales</h2>
+            </div>
+            
+        </div>
+        
+        <nav class="header-onglets">
+            <ul>
+                <li><a href="Windows.html">L'actualité Microsoft</a></li><br><br>
+                <li><a href="Gooogle-world.html">Google World</a></li><br><br>
+                <li><a href="Apple-News.html">Apple News</a></li><br><br> 
+                <li><a href="open-source.html">L'open source</a></li><br><br>
+                <li><a href="innovations.html">Les innovations</a></li><br><br>
+                <li><a href="comparatifs.html">Les comparatifs</a></li><br><br> 
+            </ul>    
+        </nav
+
+    </header>
+
+    <main>
+
+        <form method="post" action="form.php" class="inscription">
+
+<!-- Identifiant -->
+            <fieldset>
+                
+                <div class="quality">
+                    <legend>Qualité</legend>
+                    <div class="quality-checkbox">
+                        <input type="radio" name="monsieur" id="monsieur">
+                        <label for="titre1">Monsieur</label>
+
+                        <input type="radio" name="madame" id="madame">
+                        <label for="titre2">Madame</label> 
+                    </div>
+                </div>
+
+                <div class="infos_perso">
+                   <legend>Vos informations personnelles</legend><br><br>
+                
+                    <div id="birthday">
+                        <label for="birthday">Date de naissance</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+                    <br><br>
+                    
+                    <div id="lname">
+                        <label for="lname">Nom</label>
+                        <input type="text" name="lname" id="lname" value="Dupont">
+                    </div>
+                    <br><br>
+
+                    <div id="fname">
+                        <label for="fname">Prénom</label>
+                        <input type="text" name="fname" id="fname" value="Gaston"> 
+                    </div>
+                    <br><br>
+                    
+                    <div id="email">
+                        <label for="email">Adresse email</label>
+                        <input type="email" name="email" id="email" value="gaston.dupont@gmail.com">
+                    </div>
+                    <br><br> 
+
+                    <div id="phone">
+                        <label for="phone">Numéro de téléphone : </label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <br><br>
+                    
+                    <div id="presentation">
+                        <label for="presentation">Présentation</label><br>
+                        <textarea name="presentation" id="presentation"></textarea>
+                    </div>
+                    <br><br>
+                
+                </div>
+               
+<!-- Autres informations -->
+
+                <div class="autres-infos">
+                    <legend>Autres informations</legend><br><br>
+
+<!-- Niveau d'études -->
+                    <div class="niveau_etudes">
+                        <label for="niveau_etudes">Niveau d'études</label>
+                        <select name="niveau_etudes" id="niveau_etudes">
+                            <option value="scolaire">Scolaire</option>
+                            <option value="secondaire">Secondaire</option>
+                            <option value="bac+2">Bac+2</option>
+                            <option value="bac+3">Bac+3</option>
+                            <option value="bac+4">Bac+4</option>
+                            <option value="bac+5">Bac+5</option>
+                            <option value="doctorat">Doctorat</option>
+                            <option value="licence">Licence professionnelle</option>
+                            <option value="master">Master professionnel</option><br><br>
+                        </select>
+                    </div>
+                
+<!-- Loisirs -->
+
+                    <div class="loisirs">
+                        <br><br><legend id="legend-loisirs">Cocher les loisirs que vous aimez :</legend>
+                        <div class="loisirs-types">
+                            <div class="loisirs1">
+                                    <input type="checkbox" name="sport" id="sport"><label for="sport">Sport</label>
+                                    <input type="checkbox" name="musique" id="musique"><label for="musique">Musique</label>
+                                    <input type="checkbox" name="lecture" id="lecture"><label for="lecture">Lecture</label>
+                                    <input type="checkbox" name="arts" id="arts"><label for="arts">Arts</label>
+                                    <input type="checkbox" name="couture" id="couture"><label for="couture">Couture, mode</label>
+                            </div>
+                            <div class="loisirs2">
+                                <input type="checkbox" name="cinema" id="cinema"><label for="cinema">Cinéma : films, DVD</label>
+                                <input type="checkbox" name="cuisine" id="cuisine"><label for="cuisine">Cuisine</label>
+                                <input type="checkbox" name="video-games" id="video-games"><label for="video-games">Jeux vidéos</label>
+                                <input type="checkbox" name="computer" id="computer"><label for="computer">Informatique</label>
+                                <input type="checkbox" name="other" id="other"><label for="other">Autres</label>
+                            </div>
+
+                        </div>   
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                    <div id="precision">
+                        <br><br><label for="precision">Précision</label><br>
+                        <textarea name="precision" id="precision" cols="50" rows="10"></textarea><br><br>
+                    </div>
+                
+                    <div id="choice">
+                        <br><br><label for="votre-choix">Votre avis sur notre site web</label><br>
+                        <textarea name="votre-choix" id="votre-choix" cols="50" rows="10"></textarea><br><br>
+                    </div>
+
+                    <div id="button">
+                        <button type="submit" formaction="connexion.html">Validation</button>
+                    </div>
+
+                </div>
+            
+            
+            
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+
+        <nav class="footer_container">
+            <ul class="footer_menu">
+                <li><a href="cgu.asp">CGU</a></li>
+                <li><a href="loi.asp">Mentions légales</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="plan_site.asp">Plan du site</a></li>
+                <li><a href="comments.asp">Commentaires</a></li>
+            </ul>
+        </nav>
+
+        <p>Hélène Wünschendorff, 2020.</p>
+
+    </footer>
+
+    
+</body>
+</html>

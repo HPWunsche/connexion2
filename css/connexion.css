@@ -1,0 +1,344 @@
+/* Caractéristiques communes à toutes les pages */
+
+@font-face{
+    font-family: 'Chunk Five';
+    src: url('Chunk Five Print.otf') format('otf');
+    src: url('ChunkFive-Regular.otf') format('otf');
+}
+
+
+label, input, p{
+    font-family: 'Chunk Five', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Parties communes : header, footer */
+
+    /* Nav du header et du footer */
+
+nav{
+    max-height: 40%;
+}
+
+nav ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    background: lightgreen repeat-x;
+    color: black;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    /* Header */
+
+header{
+    max-height: 20%;
+    padding-right: 4.5%;
+    align-items: center;
+}  
+
+.logo-text h1, h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: mediumblue;
+    text-align: center;
+    padding-top: 20px;
+} 
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    background-color: rgb(226, 243, 250);
+    border-radius: 3%;
+}
+
+.logo-img img{
+    border-radius: 5%;
+}
+
+.header-onglets ul{
+    max-height: 300px;
+    background-color: lightgray;
+}
+
+
+    /* Liens vers motdepasse.html */
+
+.link-new-pwd{
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    
+}
+
+.link-new-pwd p a{
+    padding-top: 5%;
+}
+
+    /* Footer */
+
+footer{
+    background-color: powderblue;
+}
+
+.footer_container ul {
+    background-color: mediumturquoise;
+    max-height: 40%;
+    border-radius: 5%;
+}
+
+/* inscription.html */
+.inscription{
+    background-image: url(https://lh3.googleusercontent.com/proxy/P_uondBsXngSOMEOILyHWX5kmTVAqhjwAfmn57s8_rNhlQL-VtifgVV8GDVs4pQRQ4F8WhsOIz5h4sC-hrgknzMBGnD2XSu4r1fv);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+legend{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: mediumblue;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#birthday, #lname, #fname, #email, #phone{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+#birthday input[type=date], #lname input[type=text], 
+#fname input[type=text], #email input[type=email], 
+#phone input[type=tel] {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#presentation label, #precision label, #choice label{
+    text-align: center;
+}
+
+#presentation textarea, #precision textarea, #choice textarea{
+    width: 50%;
+    padding: 50px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    margin-left: 20%;
+}
+
+#presentation, #precision, #choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.quality-checkbox, .niveau_etudes, .loisirs-types{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px; 
+}
+
+.quality-checkbox input[type=radio]{
+    vertical-align: middle;
+    padding-right: 40%;
+}
+.quality-checkbox label{
+    padding-right: 100%;
+}
+
+
+select{
+    max-width: min-content;
+}
+
+.loisirs1 input[type=checkbox], .loisirs1 label,
+.loisirs2 input[type=checkbox], .loisirs2 label{
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    line-height: 0%;
+    box-sizing: content-box;
+}
+
+.loisirs1 label, .loisirs2 label{
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.loisirs1{
+    margin-right: 30px;
+    padding-left: 50%;
+}
+
+.loisirs2{
+    margin-left: 60px;
+    
+}
+/* Styles : connexion.html ; motdepasse.html */
+
+.connexion{
+    background-image: url(https://lh3.googleusercontent.com/proxy/eOz6072Ti_tC_-WxfbPCocUyiyvvlCh-y1b2ltO12tTXUjSwcHtcW5klDRralZBQQpqbAE3UjMkG1N_GssK4VyoYr7wXn7x4TOSbMc6E2Dskk7_G6MTHdPio--NZpwu0sYo5yfCqG4-MlXfAS1DORQR7FkBAJfSS-cmM1mddPkRq8NcwaAMthoH78cIhD6CRt2GW_26lDEehRE1PSeLnv06D5Wur3NuzuPiBWJXdQabs4ADc8rypKBOpHGW8f4Zn4A);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 100%;
+   
+}
+
+.new-psw{
+    background-image: url(https://archzine.fr/wp-content/uploads/2018/08/images-dautomne-pour-fond-d%C3%A9cran-sapins-teint%C3%A9-en-rose-au-lever-du-soleil-nuages-ciel-bleu-clairi%C3%A8re-grand-cours-deau.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 100%;
+}
+
+.connexion-signup, .new-psw{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.connexion-signup, .new-psw-container h1{
+    text-align: center;
+}
+
+.login-connexion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.login-new-psw{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.login-connexion input[type=text], .login-connexion input[type=password], 
+.login-new-psw input[type=text], .login-new-psw input[type=password] {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .login-connexion input[type=text]:focus, .login-connexion input[type=password]:focus, 
+  .login-new-psw input[type=text]:focus, .login-new-psw input[type=password]:focus {
+    background-color: rgb(228, 239, 241);
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+
+  /* Style des boutons de validation des trois pages */
+  button {
+    background-color: #6381b9;
+    color:black;
+    padding: 12px 20px;
+    /*margin: 8px 0;*/
+    margin-left: 25%;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    opacity: 0.9;
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Bouton : connexion.html */
+
+  #button{
+      margin-left: 25%;
+  }
+
+  /* motdepasse.html : Styles du bouton d'annulation */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #d3c6c5;
+  }
+  
+  /* motdepasse.html : Boutons d'annulation et de validation : float, largeur */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 25%;
+  }
+  
+  .signupbtn{
+      margin-left: 0;
+  }
+
+  /* Padding pour le bloc new-psw-container */
+  .new-psw-container {
+    padding: 16px;
+  }
+  
+  /* Clarifier les floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .clearfix{
+      display: flex;
+      flex-direction: row;
+  }
+
+  
